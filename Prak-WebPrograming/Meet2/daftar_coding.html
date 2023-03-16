@@ -6,7 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daftar Coding</title>
 </head>
-<body>
-    
+<body bgcolor="brown">
+    <form method="post" action="Pemograman_Web.html">
+        <table>
+            <tr>
+                <td>Nama: </td>
+                <td><input type="text" id="nama" name="nama" required placeholder="Nama Panggilan"></td>
+            </tr>
+            <tr>
+                <td>Nomor Telepon: </td>
+                <td><input type="text" id="phone" name="phone" pattern="[0-9]{12}"> </td>
+            </tr>
+            <tr>
+                <td>Email: </td>
+                <td><input type="email" id="email" name="email"> </td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="sandi" required pattern="[a-z] {8,} "> </td>
+            </tr>
+            <tr>
+                <td>Tangal Lahir: </td>
+                <td><input type="date" id="TTl" name="TTl"> </td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin: </td>
+                <td>
+                    <input type="radio" id="Pria" name="kelamin" value="1"> 
+                    <label for="Pria">Laki-laki</label>
+                    <input type="radio" id="Wanita" name="kelamin" value="2"> 
+                    <label for="Wanita">Perempuan</label>
+                </td>
+            </tr>
+            <tr>
+                <td> Les Yang Ingin Diikuti</td>
+                <td>
+                    <input type="checkbox" id="html" name="html" value="html">
+                    <label for="html"> html </label>
+                    <input type="checkbox" id="css" name="css" value="css">
+                    <label for="css"> css </label>
+                    <input type="checkbox" id="javascript" name="javascript" value="javascript">
+                    <label for="javascript"> javascript </label>
+                    <input type="checkbox" id="PHP" name="PHP" value="PHP">
+                    <label for="PHP"> PHP </label>
+                </td>
+            </tr>
+            <tr><td>Tingkat Pendidikan</td>
+            <td>
+                <select name="pendidikan" id="pendidikan">
+                    <option value="SD">SD</option>
+                    <option value="SMP">SMP</option>
+                    <option value="SMA">SMA</option>
+                    <option value="Kuliah">Kuliah</option>
+                </select>
+            </td>
+            </tr>
+            <tr>
+                <td>Upload CV</td> 
+                <td><input type="file"> </td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td>Komentar dan Saran</td>
+                <td><textarea name="komentar" id="komentar" cols="60" rows="4"></textarea> </td>
+            </tr>
+        </table>
+        <input type="submit" value="Kirim ">
+    </form> 
 </body>
 </html>
