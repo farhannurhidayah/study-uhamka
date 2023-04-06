@@ -6,25 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Pribadi</title>
     <link rel="stylesheet" type="text/css" href="Pakaian.css">
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha3-dist/css/bootstrap.css">
+
 </head>
 
-<body style="margin: 0;">
+<body>
 
-<div id="header" style="background-color: rgb(26, 198, 246); text-align: center; color: rgb(1, 2, 28); font-family: sans-serif; font-size: 15px; padding: 4px;">
+<div id="head" class="container-fluid p-5 bg-dark text-white" style="text-align: center;">
     <h1>Web Pribadi Farhan Nurhidayah </h1>
     <h2>Ini adalah beberapa mata kuliah yang saya pelajari di semester 4</h2>
 </div>
+<p>Tertarik belajar Web Programming, Silahkan <a href="Pemograman_Web.html">Kunjungi</a></p>
 
-<div class="nav" style="background-color: rgb(30, 255, 0); padding: 8px;">
-    <a href="Pemrogmanan Web.html" class="pilihan">Pemrogaman Web |</a>
-    <a href="Matematika.html" class="pilihan" >Matematika diskrit |</a>
-    <a href="OOP.html" class="pilihan">OOP</a>
+<div id="nav" class="container-fluid p-2 bg-warning text-body" >
+    <ul class="nav">
+        <li class="nav-item"><a href="Pemrogmanan Web.html" class="nav-link">Pemrogaman Web </a></li>
+        <li class="nav-item"><a href="Matematika.html" class="nav-link" >Matematika diskrit </a></li>
+        <li class="nav-item"><a href="OOP.html" class="nav-link">OOP</a></li>
+    </ul>
 </div>
 
 
 
 
-<div id="utama" style="background-image: url(img/fish-background-placeholder-img.png); padding: 4px; background-repeat: no-repeat; background-size: cover;color: azure; font-size: 18px; margin-bottom: 0; font-family: Courier New;">
+<div id="utama" style="background-image: url(img/fish-background-placeholder-img.png); padding: 4px;">
     <div id="article">
     <p>Saya adalah seorang mahasiswa biasa,sederhana, baik dan tidak sombong yang sedang belajar Pemrograman Web di salah satu kampus swasta terbaik di Jakarta. <br><br>  Saya ingin menjadi orang yang bermanfaat bagi nusa bangsa dan agama</p>
 
@@ -81,19 +86,20 @@
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mWzX9YbjM70" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <figure>
     <figcaption>Galeri foto</figcaption><br>
-    <img width="350" height="250" src="img/Dogtooth-Cichlid.jpg">
-    <img width="350" height="250" src="img/JackDempsey.jpg">
+    <img width="350" height="250" src="img/Dogtooth-Cichlid.jpg" class="rounded" alt="Dogtooth-Cichlid">
+    <img width="350" height="250" src="img/JackDempsey.jpg" class="rounded-circle" alt="JackDempsey">
+    <img width="350" height="250" src="img/peacock.jpg" class="img-thumbnail" alt="Peacock">
 </figure>
 </div>
 </div>
 
 <footer>
-<div id="footer" align="center" style="background-color: aqua; padding: 2px;">
+<div id="footer" class="container-fluid p-2 bg-danger text-white" style="background-color: aqua; padding: 2px; text-align: center;">
     <h3>
         Terimakasih Sudah Berkunjung
     </h3>
  
-<p align="center">Copyright&copy; by Farhan Nurhidayah</p> 
+<p style="text-align: center;">Copyright&copy; by Farhan Nurhidayah</p> 
 </div>
 </footer>
 
