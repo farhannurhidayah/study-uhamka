@@ -14,24 +14,23 @@ class Mahasiswa implements Biodata {
 
     @Override
     public void inputData() {
-        Scanner add = new Scanner(System.in);
-        System.out.println("***  Pendataan Mahasiswa Uhamka ***");
-        System.out.print("Nama Mahasiswa : ");
-        nama = add.nextLine();
-        
-        System.out.print("jurusan : ");
-        jurusan = add.nextLine();
-        
-        System.out.print("Alamat : ");
-        alamat = add.nextLine();
-        
-        System.out.print("Usia : ");
-        usia = add.nextInt();
+        try (Scanner add = new Scanner(System.in)) {
+            System.out.println("***  Pendataan Mahasiswa Uhamka ***");
+            System.out.print("Nama Mahasiswa : ");
+            nama = add.nextLine();
+            
+            System.out.print("jurusan : ");
+            jurusan = add.nextLine();
+            
+            System.out.print("Alamat : ");
+            alamat = add.nextLine();
+            
+            System.out.print("Usia : ");
+            usia = add.nextInt();
 
-        System.out.print("NIM: ");
-        nim = add.nextInt();
-        
-        
+            System.out.print("NIM: ");
+            nim = add.nextInt();
+        }
         System.out.println("***  Terima Kasih Telah Berpartisipasi ***");
         
         

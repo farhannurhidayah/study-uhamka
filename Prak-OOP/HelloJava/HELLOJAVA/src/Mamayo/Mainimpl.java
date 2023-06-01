@@ -14,19 +14,20 @@ public class Mainimpl implements mainin {
     
     @Override
     public void menu() {
-        Scanner input = new Scanner(System.in);
-        List<String> menu = new ArrayList<>();
-        menu.addAll(List.of("1. Pendaftaran", "2. Jabodetabek"));
-        System.out.println("Silahkan pilih menu dibawah ini");
-        for (var value : menu) {
-            System.out.println(value);
-        }
-        System.out.print("Silahkan pilih menu : ");
-        menu = Collections.singletonList(input.next());
-        if  (menu.contains("1")) {
-            pendaftaran();
-        } else if (menu.contains("2")) {
-            jadwalMatkul();
+        try (Scanner input = new Scanner(System.in)) {
+            List<String> menu = new ArrayList<>();
+            menu.addAll(List.of("1. Pendaftaran", "2. Jabodetabek"));
+            System.out.println("Silahkan pilih menu dibawah ini");
+            for (var value : menu) {
+                System.out.println(value);
+            }
+            System.out.print("Silahkan pilih menu : ");
+            menu = Collections.singletonList(input.next());
+            if  (menu.contains("1")) {
+                pendaftaran();
+            } else if (menu.contains("2")) {
+                jadwalMatkul();
+            }
         }
 
     }
