@@ -26,3 +26,7 @@
     overflow: scroll; 
     border: thick 8px;
 }
+
+#footer {
+    position:absolute;
+}

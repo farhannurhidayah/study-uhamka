@@ -11,22 +11,18 @@
     <title>Web Pribadi</title>
     <link rel="stylesheet" type="text/css" href="Pakaian.css">
     <link rel="stylesheet" href="bootstrap-5.3.0-alpha3-dist/css/bootstrap.css">
+    <script src="code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="brain.js"></script>
 
 </head>
 
-<body>
-
-    <div id="header" class="row container-fluid p-1 bg-dark text-white" style="text-align: center;">
-        <img width="200" height="200" src="uhamka.png" class="col-2" >
+<body onload="home()">
+    <div id="header" class="container-fluid p-5 bg-dark text-white" style="text-align: center;">
         
-        <div class="col-8">
             <h1>Web Pribadi Farhan Nurhidayah </h1>
             <h2>Ini adalah beberapa mata kuliah yang saya pelajari di semester 4</h2>
-        </div>
-        <img width="200" height="200" src="uhamka.png" class="col-2" >
     </div>
 
-<p>Tertarik belajar Web Programming, Silahkan <a href="Pemograman_Web.html">Kunjungi</a></p>
 
 <div id="nav" class="row" >
     <ul class="nav">
@@ -39,9 +35,10 @@
 <div id="badan" class="row">
 <div id="bar" class="container-fluid p-2 bg-success text-white col-2">
     <ul class="navbar-nav">
-        <li class="nav-item  " style="text-align:center"><a href="Pemograman_Web.html" class="nav-link text-white">Pemrogaman Web </a></li>
-        <li class="nav-item " style="text-align:center"><a href="Matematika.html" class="nav-link text-white" >Matematika diskrit </a></li>
-        <li class="nav-item " style="text-align:center"><a href="audio.html" class="nav-link text-white">OOP</a></li>
+        <li class="nav-item  " style="text-align:center"><a onclick="home();" class="nav-link text-white">Home </a></li>
+        <li class="nav-item  " style="text-align:center"><a onclick="oop();" class="nav-link text-white">Pemrogaman Web </a></li>
+        <li class="nav-item "  style="text-align:center"><a onclick="Web();" class="nav-link text-white" >Matematika diskrit </a></li>
+        <li class="nav-item " style="text-align:center"><a onclick="Tbo()";class="nav-link text-white">OOP</a></li>
     </ul>
 
 </div>
@@ -49,80 +46,19 @@
 
 
 
-<div id="utama" class="col-10" style="background-image: url(img/fish-background-placeholder-img.png); padding: 4px;">
-    <div id="article">
-    <p>Saya adalah seorang mahasiswa biasa,sederhana, baik dan tidak sombong yang sedang belajar Pemrograman Web di salah satu kampus swasta terbaik di Jakarta. <br><br>  Saya ingin menjadi orang yang bermanfaat bagi nusa bangsa dan agama</p>
-
-
-<p>Matakuliah yang saya ikuti </p>
-<ul type = "square">
-    <li>Semester Ganjil:
-        <ol type="1">
-            <li>Pemrogaman Web</li>
-            <div id="Web" class="penjelasan">
-                Web Programming atau Pemrograman Web merupakan istilah yang erat kaitannya dengan internet dan website. Memang benar, karena pemrograman web merupakan suatu proses pembuatan website untuk keperluan internet. Orang banyak mengenal web dengan istilah WWW atau World Wide Web.
-            </div>
-            <li>Metode Numerik</li>
-            <div class="penjelasan">
-                Metode numerik merupakan teknik penyelesaian permsalahn yang diformulasikan secara matematis dengan menggunakan operasi hitungan (aritmatik) yaitu operasi tambah, kurang, kali, dan bagi. Metode ini digunakan karena banyak permasalahan matematis tidak dapat diselesaikan menggunakan metode analitik. Jikapun terdapat penyelesaiannya secara analitik, proses penyelesaiaannya sering kali cukup rumit dan memakan banyak waktu sehingga tidak efisien.
-            </div>
-            <li>Sistem Basis data</li>
-            <div class="penjelasan">
-                Pengertian sistem basis data secara umum adalah sistem yang terdiri atas kumpulan tabel data yang saling berhubungan (dalam sebuah basis data di sebuah sistem komputer) dan sekumpulan program (yang biasa disebut DBMS/Database Management System) yang memungkinkan beberapa pemakai dan/atau program lain untuk mengakses dan memanipulasi tabel-tabel data tersebut “Basis Data Revisi Kedua, Fathansyah, hal. 12”
-                Dapat diambil kesimpulan bahwa, pengertian sistem basis data adalah komponen atau mekanisme proses yang berjalan secara bersamaan dalam pengelolaan kumpulan fakta nyata yang terorganisir (saling berelasi) di dalam perangkat komputer.
-            </div>
-        </ol>
-    </li>
-    <li>Semester Genap:
-
-        <ol type="A">
-            <li>Data Mining</li>
-            <div class="penjelasan">
-                Data mining adalah proses pengumpulan dan pengolahan data yang bertujuan untuk mengekstrak informasi penting pada data. Proses pengumpulan dan ekstraksi informasi tersebut dapat dilakukan menggunakan perangkat lunak dengan bantuan perhitungan statistika, matematika, ataupun teknologi Artificial Intelligence (AI). Data mining sering disebut juga Knowledge Discovery in Database (KDD).
-            </div>
-            <li><a href="video.html">OOP</a></li>
-            <div class="penjelasan">
-                object-oriented programming atau OOP adalah suatu metode pemrograman yang berorientasi pada objek. 
-
-                Program-program yang telah ada merupakan gabungan dari beberapa komponen-komponen kecil yang sudah ada sebelumnya.
-
-                Hal itu dapat mempermudah pekerjaan seorang programmer dalam melakukan pengembangan program.
-
-                Objek-objek yang saling berkaitan dan disusun kedalam satu kelompok ini disebut dengan class. 
-
-                Nantinya, objek-objek tersebut akan saling berinteraksi untuk menyelesaikan masalah program yang rumit.
-            </div>
-            <li><a href="audio.html">Matematika diskrit</a></li>
-            <div class="penjelasan">
-                Matematika diskrit atau diskret adalah cabang matematika yang membahas segala sesuatu yang bersifat diskrit. Diskrit disini artinya tidak saling berhubungan (lawan dari kontinu). Objek yang dibahas dalam Matematika Diskrit - seperti bilangan bulat, graf, atau kalimat logika - tidak berubah secara kontinu, tetapi memiliki nilai yang tertentu dan terpisah. Beberapa hal yang dibahas dalam matematika ini adalah teori himpunan, teori kombinatorial, teori bilangan, permutasi, fungsi, rekursif, teori graf, dan lain-lain. Matematika diskrit merupakan mata kuliah utama dan dasar untuk bidang ilmu komputer atau informatika.
-            </div>
-        </ol>
-    </li>
-</ul>
+<div id="utama" class="col-10" style="background-image: url(img/fish-background-placeholder-img.png); padding: 8px;">
 
 </div>
-<div id="Galeri" style="text-align: center;">
-<p>Feeding Time African Cichild</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/mWzX9YbjM70" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<figure>
-    <figcaption>Galeri foto</figcaption><br>
-    <img width="350" height="250" src="img/Dogtooth-Cichlid.jpg" class="rounded" alt="Dogtooth-Cichlid">
-    <img width="350" height="250" src="img/JackDempsey.jpg" class="rounded-circle" alt="JackDempsey">
-    <img width="350" height="250" src="img/peacock.jpg" class="img-thumbnail" alt="Peacock">
-</figure>
-</div>
-</div>
-</div>
-
-<footer>
-<div id="footer" class="container-fluid p-2 bg-danger text-white" style="background-color: aqua; padding: 2px; text-align: center;">
-    <h3>
+    
+<div id="footer" class="container-fluid p-2 bg-danger text-white" style="background-color: aqua; font-size: 32px; text-align: center;">
+    <p id="bawah">
         Terimakasih Sudah Berkunjung
-    </h3>
+        <br>
+        Copyright&copy; by Farhan Nurhidayah
+    </p>
  
-<p style="text-align: center;">Copyright&copy; by Farhan Nurhidayah</p> 
+<!-- <p style="text-align: center;">Copyright&copy; by Farhan Nurhidayah</p>  -->
 </div>
-</footer>
 
 </body>
 </html>
