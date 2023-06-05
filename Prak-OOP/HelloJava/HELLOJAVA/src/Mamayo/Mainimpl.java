@@ -34,27 +34,27 @@ public class Mainimpl implements mainin {
 
     @Override
     public void pendaftaran() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("*** Selamat Datang di Pendaftaran Mahasiswa Uhamaka ***");
-        System.out.println("Silahkan isi form dibawah ini : ");
-        System.out.print("Nama Depan : ");
-        namaDepan = scanner.next();
+        try (Scanner scanner = new Scanner(System.in)) {
+            System.out.println("*** Selamat Datang di Pendaftaran Mahasiswa Uhamaka ***");
+            System.out.println("Silahkan isi form dibawah ini : ");
+            System.out.print("Nama Depan : ");
+            namaDepan = scanner.next();
 
-        System.out.print("Nama Belakang :");
-        namaBelakang = scanner.next();
+            System.out.print("Nama Belakang :");
+            namaBelakang = scanner.next();
 
-        System.out.print("Tempat Lahir :");
-        tempatLahir = scanner.next();
+            System.out.print("Tempat Lahir :");
+            tempatLahir = scanner.next();
 
-        System.out.print("Tanggal Lahir :");
-        tanggalLahir = scanner.nextInt();
+            System.out.print("Tanggal Lahir :");
+            tanggalLahir = scanner.nextInt();
 
-        System.out.print("Bulan Lahir :");
-        bulanLahir = scanner.next();
+            System.out.print("Bulan Lahir :");
+            bulanLahir = scanner.next();
 
-        System.out.print("Jurusan :");
-        jurusan = scanner.next();
-
+            System.out.print("Jurusan :");
+            jurusan = scanner.next();
+        }
         System.out.println("****************  Selamat Pendaftaran Berhasil ********************");
         showResult();
 
