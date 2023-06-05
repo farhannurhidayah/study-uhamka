@@ -1,0 +1,82 @@
+<!-- Farhan NUrhidayah -->
+<!-- 4B -->
+<!-- 2103015243 -->
+<!-- Pemograman Web -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha3-dist/css/bootstrap.css">
+    <title>Daftar Coding</title>
+</head>
+<body bgcolor="brown">
+    <form method="post" action="Pemograman_Web.html">
+        <table>
+            <tr>
+                <td>Nama: </td>
+                <td><input type="text" id="nama" name="nama" required placeholder="Nama Panggilan" class="form-control form-control-lg"></td>
+            </tr>
+            <tr>
+                <td>Nomor Telepon: </td>
+                <td><input type="text" id="phone" name="phone" pattern="[0-9]{12}" class="form-control form-control-sm"> </td>
+            </tr>
+            <tr>
+                <td>Email: </td>
+                <td><input type="email" id="email" name="email" class="form-control "> </td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="sandi" required pattern="[a-z0-9] {8,} " class="form-control"> </td>
+            </tr>
+            <tr>
+                <td>Tangal Lahir: </td>
+                <td><input type="date" id="TTl" name="TTl" > </td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin: </td> 
+                <td >
+                    <input type="radio" id="Pria" name="kelamin" value="1" class="form-check-input"> 
+                    <label for="Pria" class="form-check-label">Laki-laki</label>
+                    <input type="radio" id="Wanita" name="kelamin" value="2" class="form-check-input"> 
+                    <label for="Wanita" class="form-check-label">Perempuan</label>
+                </td>
+            </tr>
+            <tr>
+                <td> Les Yang Ingin Diikuti</td>
+                <td>
+                    <input type="checkbox" id="html" name="html" value="html" class="form-check-input" >
+                    <label for="html" class="form-check-label" > html </label>
+                    <input type="checkbox" id="css" name="css" value="css" class="form-check-input">
+                    <label for="css" class="form-check-label"> css </label>
+                    <input type="checkbox" id="javascript" name="javascript" value="javascript" class="form-check-input">
+                    <label for="javascript" class="form-check-label"> javascript </label>
+                    <input type="checkbox" id="PHP" name="PHP" value="PHP" class="form-check-input">
+                    <label for="PHP" class="form-check-label"> PHP </label>
+                </td>
+            </tr>
+            <tr><td>Tingkat Pendidikan</td>
+            <td>
+                <select name="pendidikan" id="pendidikan" style="width: 100px;" class="form-select">
+                    <option value="SD">SD</option>
+                    <option value="SMP">SMP</option>
+                    <option value="SMA">SMA</option>
+                    <option value="Kuliah">Kuliah</option>
+                </select>
+            </td>
+            </tr>
+            <tr>
+                <td>Upload CV</td> 
+                <td><input type="file"> </td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td align="">Komentar dan Saran</td>
+                <td><textarea name="komentar" id="komentar" cols="60" rows="4"></textarea> </td>
+            </tr>
+        </table>
+        <input type="submit" value="Kirim" class="btn btn-success" style="width: 200px; margin-left: 420px;">
+    </form> 
+</body>
+</html>
