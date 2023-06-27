@@ -1,0 +1,90 @@
+:root {
+  color: rgb(13,110,253)
+}
+.c-item {
+  height: 650px;
+}
+.c-img {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+.About {
+  padding:  4rem 7% 1.4rem;
+}
+
+.About h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+
+}
+
+.About h2 span {
+  color: rgb(13,110,253);
+  font-weight: 700;
+
+} 
+
+.About .row {
+  display: flex;
+}
+
+.About .row .about-img {
+  flex:  1 1  45rem;
+}
+
+.About .row .about-img img {
+  width: 100%;
+}
+
+.About .row .content {
+  flex: 1 1 35rem;
+  padding: 0 1rem ;
+}
+.About .row .content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.About .row .content p {
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+  font-weight: 100;
+  line-height: 1.6;
+}
+
+.img-wrapper {
+  max-width: 100%;
+  /* height: 65vw; */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+img { 
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+/* INI Untuk Slide Card */
+@media screen and (min-width:576px) {
+  .katalog .carousel .carousel-inner {
+    display: flex;
+  }
+  .katalog .carousel .carousel-item {
+    display: block;
+    margin-right: 0;
+    flex: 0 0 calc(100%/3);
+  }
+}
+
+.katalog .carousel .carousel-inner {
+  padding: 1em;
+}
+
+.card {
+  margin: 0 .5em;
+}
