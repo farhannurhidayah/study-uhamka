@@ -1,0 +1,10 @@
+username : if0_34927543
+password : oevweiFlVADMK0T
+
+
+
+database
+db_name : if0_34927543_phpdasar
+db_username : if0_34927543
+db_password  : oevweiFlVADMK0T
+db_hostname : sql306.infinityfree.com
